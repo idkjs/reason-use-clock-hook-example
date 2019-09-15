@@ -1,0 +1,35 @@
+{
+  "name": "reason-use-clock-hook-example",
+  "version": "0.1.0",
+  "homepage": "http://idkjs.github.io/reason-use-clock-hook-example",
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:bsb": "bsb -clean-world -make-world -w",
+    "start:webpack": "webpack-dev-server --port 3000",
+    "build": "npm-run-all build:*",
+    "build:webpack": "NODE_ENV=production webpack",
+    "format": "refmt src/*.re",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "Alain Armand",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "reason-react": ">=0.7.0",
+    "reason-use-clock-hook": "1.0.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "npm-run-all": "^3.1.1",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8",
+    "bs-platform": "^5.0.6"
+  }
+}
