@@ -32,4 +32,4 @@ let secondstyle =
       );
 ```
 
-This program also demonstrates using an imported hook in `ReasonUseClockHook`.
+This program also demonstrates using an imported hook in [`ReasonUseClockHook`](https://github.com/idkjs/reason-use-clock-hook).
